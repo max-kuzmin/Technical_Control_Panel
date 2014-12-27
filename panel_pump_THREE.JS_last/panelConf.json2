@@ -1,0 +1,528 @@
+{
+	"scroll off": 1,
+	"server timeout": 500,
+	"panels": [
+	{
+		"name": "panel3",
+		"angle": 0,
+		"color": "silver",
+		"title": 0,
+		
+		"elements": [
+		
+		{
+                "type": "5 digits",
+                "name": "obj33",
+                "x": 0,
+                "y": 95,
+				"comment": [],
+				"scale": 1,
+				"digits after dot": 0,
+				"value" : 9345,
+				"color" : "red",
+                "title" : 0
+            },
+			
+		{
+			"type": "lamp",
+			"name": "obj1",
+			"x": -75,
+			"y": 50,
+			"comment": [],
+			"scale": 2,
+			"value": 0,
+			"color": "red",
+			"title" : 
+			{
+				"text" : ["перегрузка", "  планка"],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": 15}
+		},
+		
+		{
+			"type": "lamp",
+			"name": "obj2",
+			"x": -40,
+			"y": 50,
+			"comment": [],
+			"scale": 2,
+			"value": 1,
+			"color": "red",
+			"title" : 
+			{
+				"text" : [" низкое", "давление"],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": 15}
+		},
+		
+		{
+			"type": "lamp",
+			"name": "obj1",
+			"x": -5,
+			"y": 50,
+			"comment": [],
+			"scale": 2,
+			"value": 0,
+			"color": "red",
+			"title" : 
+			{
+				"text" : ["высокое", "давление"],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": 15}
+		},
+		
+		{
+			"type": "lamp",
+			"name": "obj1",
+			"x": 30,
+			"y": 50,
+			"comment": [],
+			"scale": 2,
+			"value": 0,
+			"color": "red",
+			"title" : 
+			{
+				"text" : ["высокая t", "   воды"],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": 15}
+		},
+		
+		{
+			"type": "lamp",
+			"name": "obj1",
+			"x": 65,
+			"y": 50,
+			"comment": [],
+			"scale": 2,
+			"value": 1,
+			"color": "red",
+			"title" : 
+			{
+				"text" : ["разряжение", " в камере"],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": 15}
+		},
+		
+		{
+			"type": "lamp",
+			"name": "obj1",
+			"x": -5,
+			"y": 10,
+			"comment": [],
+			"scale": 2,
+			"value": 0,
+			"color": "white",
+			"title" : 
+			{
+				"text" : [" авт. работа"],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": 15}
+		},
+		
+		{
+			"type": "button",
+			"name": "obj4",
+			"x": 55,
+			"y": 10,
+			"comment": [],
+			"scale": 1.3,
+			"color": "green",
+			"title" : 
+			{
+				"text" : ["включение"],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": -15
+
+			}
+		},
+		
+		{
+			"type": "button",
+			"name": "obj4",
+			"x": 55,
+			"y": -20,
+			"comment": [],
+			"scale": 1.5,
+			"color": "red",
+			"title" : 
+			{
+				"text" : ["стоп "],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": -15
+
+			}
+		},
+
+		{
+			"type": "button",
+			"name": "obj4",
+			"x": -5,
+			"y": -60,
+			"comment": [],
+			"scale": 1.2,
+			"color": "black",
+			"title" : 
+			{
+				"text" : ["вперед "],
+				"size": 30,
+				"color": "black",
+				"x": 0,
+				"y": 10
+
+			}
+		},
+
+		{
+			"type": "button",
+			"name": "obj4",
+			"x": -5,
+			"y": -80,
+			"comment": [],
+			"scale": 1.2,
+			"color": "black",
+			"title" : 
+			{
+				"text" : ["назад "],
+				"size": 30,
+				"color": "black",
+				"x": 0,
+				"y": 10
+
+			}
+		},
+
+		{
+			"type": "button",
+			"name": "obj4",
+			"x": -5,
+			"y": -100,
+			"comment": [],
+			"scale": 1.2,
+			"color": "red",
+			"title" : 
+			{
+				"text" : ["стоп "],
+				"size": 30,
+				"color": "black",
+				"x": 0,
+				"y": 10
+
+			}
+		},
+
+		{
+			"type": "analog rotary switch",
+			"name": "obj16",
+			"x": -5,
+			"y": -25,
+			"comment": [],
+			"scale": 1.6,
+			"max value": 50,
+			"min value": -10,
+			"value": 0,
+			"texture": 0,
+			"title" : {
+				"text" : ["время цикла"],
+				"size": 30,
+				"color": "black",
+				"x": 0,
+				"y": 15
+
+			}	
+		},
+
+		{
+			"type": "holding button",
+			"name": "obj23",
+			"x": -60,
+			"y": 20,
+			"comment": [],
+			"scale": 1.6,
+			"value": 1,
+			"color": "red",
+			"title" : 
+			{
+				"text" : ["вентиляция"],
+				"size": 30,
+				"color": "black",
+				"x": 0,
+				"y": -15
+
+			}
+		}			
+		
+		]
+	},
+	
+	{
+		"name": "panel4",
+		"angle": 0,
+		"color": "silver",
+		"title": 0,
+		
+		"elements": [
+		
+		{
+			"type": "lamp",
+			"name": "obj1",
+			"x": -75,
+			"y": 70,
+			"comment": [],
+			"scale": 2,
+			"value": 0,
+			"color": "red",
+			"title" : 
+			{
+				"text" : ["перегрузка", "  планка"],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": 15}
+		},
+		
+		{
+			"type": "lamp",
+			"name": "obj2",
+			"x": -40,
+			"y": 70,
+			"comment": [],
+			"scale": 2,
+			"value": 0,
+			"color": "red",
+			"title" : 
+			{
+				"text" : [" низкое", "давление"],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": 15}
+		},
+		
+		{
+			"type": "lamp",
+			"name": "obj1",
+			"x": -5,
+			"y": 70,
+			"comment": [],
+			"scale": 2,
+			"value": 0,
+			"color": "red",
+			"title" : 
+			{
+				"text" : ["высокое", "давление"],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": 15}
+		},
+		
+		{
+			"type": "lamp",
+			"name": "obj1",
+			"x": 30,
+			"y": 70,
+			"comment": [],
+			"scale": 2,
+			"value": 0,
+			"color": "red",
+			"title" : 
+			{
+				"text" : ["высокая t", "   воды"],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": 15}
+		},
+		
+		{
+			"type": "lamp",
+			"name": "obj1",
+			"x": 65,
+			"y": 70,
+			"comment": [],
+			"scale": 2,
+			"value": 0,
+			"color": "red",
+			"title" : 
+			{
+				"text" : ["разряжение", " в камере"],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": 15}
+		},
+		
+		{
+			"type": "lamp",
+			"name": "obj1",
+			"x": -5,
+			"y": 30,
+			"comment": [],
+			"scale": 2,
+			"value": 1,
+			"color": "white",
+			"title" : 
+			{
+				"text" : [" авт. работа"],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": 15}
+		},
+		
+		{
+			"type": "button",
+			"name": "obj4",
+			"x": 55,
+			"y": 30,
+			"comment": [],
+			"scale": 1.3,
+			"color": "green",
+			"title" : 
+			{
+				"text" : ["включение"],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": -15
+
+			}
+		},
+		
+		{
+			"type": "button",
+			"name": "obj4",
+			"x": 55,
+			"y": 0,
+			"comment": [],
+			"scale": 1.5,
+			"color": "red",
+			"title" : 
+			{
+				"text" : ["стоп "],
+				"size": 35,
+				"color": "black",
+				"x": 0,
+				"y": -15
+
+			}
+		},
+
+		{
+			"type": "button",
+			"name": "obj4",
+			"x": -5,
+			"y": -40,
+			"comment": [],
+			"scale": 1.2,
+			"color": "black",
+			"title" : 
+			{
+				"text" : ["вперед "],
+				"size": 30,
+				"color": "black",
+				"x": 0,
+				"y": 10
+
+			}
+		},
+
+		{
+			"type": "button",
+			"name": "obj4",
+			"x": -5,
+			"y": -60,
+			"comment": [],
+			"scale": 1.2,
+			"color": "black",
+			"title" : 
+			{
+				"text" : ["назад "],
+				"size": 30,
+				"color": "black",
+				"x": 0,
+				"y": 10
+
+			}
+		},
+
+		{
+			"type": "button",
+			"name": "obj4",
+			"x": -5,
+			"y": -80,
+			"comment": [],
+			"scale": 1.2,
+			"color": "red",
+			"title" : 
+			{
+				"text" : ["стоп "],
+				"size": 30,
+				"color": "black",
+				"x": 0,
+				"y": 10
+
+			}
+		},
+
+		{
+			"type": "analog rotary switch",
+			"name": "obj16",
+			"x": -5,
+			"y": -5,
+			"comment": [],
+			"scale": 1.6,
+			"max value": 50,
+			"min value": -10,
+			"value": 30,
+			"texture": 0,
+			"title" : {
+				"text" : ["время цикла"],
+				"size": 30,
+				"color": "black",
+				"x": 0,
+				"y": 15
+
+			}	
+		},
+
+		{
+			"type": "holding button",
+			"name": "obj23",
+			"x": -60,
+			"y": 40,
+			"comment": [],
+			"scale": 1.6,
+			"value": 0,
+			"color": "red",
+			"title" : 
+			{
+				"text" : ["вентиляция"],
+				"size": 30,
+				"color": "black",
+				"x": 0,
+				"y": -15
+
+			}
+		}			
+		
+		]
+	}
+	]
+}

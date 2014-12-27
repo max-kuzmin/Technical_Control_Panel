@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Control Panel Simulator</title>
+
+		<script src="js/three.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/detector.js"></script>
+		<script src="js/THREEx.KeyboardState.js"></script>
+		<script src="js/THREEx.FullScreen.js"></script>
+		<script src="js/THREEx.WindowResize.js"></script>
+		<script src="js/Stats.js"></script>
+
+		<script src="ControlPanelApp.js"></script>
+		
+<style>
+   #tooltip {
+    position:absolute;
+    z-index:99;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: left;
+    font:  bold 12px arial, sans-serif; 
+    color: black;
+    background: white;
+	left: 0px;
+	top: 0px;
+	opacity: 0.5;}
+	
+	#optBtn {
+    position:absolute;
+    z-index:100;
+    padding: 5px 5px;
+    text-align: left;
+    font:  bold 12px arial, sans-serif; 
+    color: black;
+    background: white;
+	right: 5px;
+	top: 5px;
+	opacity: 0.5;}
+
+</style>
+<script>
+		var app;
+		$(document).ready(function(){	
+			var div = document.getElementById("container");
+			app = new ControlPanelApp(div);
+			app.run();	
+		})
+
+		var optClk = function() {
+			var elem = document.getElementById("optTab");
+			if (elem.style.display == "inline") {
+				elem.style.display = "none";}
+			else {
+				elem.style.display = "inline"}}
+</script>
+
+</head>
+<body style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; overflow: hidden">
+    <div id="container" style="z-index: 1; position: absolute; right:1px; bottom:1px; display:none;"></div>
+	<div id="tooltip"></div>
+	
+	<div id="loading" style="position: absolute; right:45%; bottom:50%;"><h3><b>ЗАГРУЗКА</b></h3></div>
+	
+	<div id="optBtn" onmouseenter="delayMove=21;" onmouseleave="delayMove=0;">
+		<div style="cursor:pointer" onclick="optClk()">Настройки</div>
+		<div id="optTab" style="display:none;"><br>
+		
+		<input type="checkbox" checked onChange="app.shadows()">Тени</input><br>
+		<input type="checkbox" checked onChange="app.hiRes()">Высокое разрешение</input><br>
+		<input type="checkbox" checked onChange="app.panelLights()">Источники света</input><br><br>
+		<input type="checkbox" checked onChange="app.tips()">Подсказки</input>
+
+		</div>
+	</div>
+</body>
+</html>
