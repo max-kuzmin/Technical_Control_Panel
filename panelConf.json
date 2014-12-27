@@ -1,0 +1,319 @@
+{
+	"scroll off": 0,
+	"server timeout": 500,
+	"panels": [
+	{
+		"name": "panel2",
+		"angle": 0,
+		"color": "#918E65",
+		"title": {
+			"text" : ["      Щит управления насосами"],
+			"size": 80,
+			"color": "black",
+			"x": 5,
+			"y": 100
+		},
+		
+		"elements": [
+		
+		{
+			"type": "lamp",
+			"name": "powerLamp",
+			"x": -20,
+			"y": 70,
+			"comment": ["Индикатор подачи питания в систему"],
+			"scale": 1.5,
+			"color": "green",
+			"value": 0,
+			"title" : {
+				"text" : ["Питание"],
+				"size": 20,
+				"color": "black",
+				"x": 0,
+				"y": -10
+			}
+		},
+		
+		{
+			"type": "lamp",
+			"name": "highLvl",
+			"x": 20,
+			"y": 70,
+			"comment": ["Индикатор высокого давления", "в системе"],
+			"scale": 1.5,
+			"color": "red",
+			"value": 0,
+			"title" : {
+				"text" : ["Высокий уровень"],
+				"size": 20,
+				"color": "black",
+				"x": 0,
+				"y": -10
+			}
+		},
+		
+		{
+			"type": "lamp",
+			"name": "overload1",
+			"x": -60,
+			"y": -20,
+			"comment": ["Индикатор перегрузки насоса 1"],
+			"scale": 1.5,
+			"color": "red",
+			"value": 0,
+			"title" : {
+				"text" : ["Перегрузка"],
+				"size": 20,
+				"color": "black",
+				"x": 0,
+				"y": -10
+			}
+		},
+		{
+			"type": "lamp",
+			"name": "overload2",
+			"x": 50,
+			"y": -20,
+			"comment": ["Индикатор перегрузки насоса 2"],
+			"scale": 1.5,
+			"color": "red",
+			"value": 0,
+			"title" : {
+				"text" : ["Перегрузка"],
+				"size": 20,
+				"color": "black",
+				"x": 0,
+				"y": -10
+			}
+		},
+		{
+			"type": "lamp",
+			"name": "statorFire1",
+			"x": -40,
+			"y": -20,
+			"comment": ["Индикатор перегрева", "статора насоса 1"],
+			"scale": 1.5,
+			"color": "red",
+			"value": 0,
+			"title" : {
+				"text" : ["  Перегрев статора"],
+				"size": 20,
+				"color": "black",
+				"x": 0,
+				"y": -10
+			}
+		},
+		{
+			"type": "lamp",
+			"name": "statorFire2",
+			"x": 70,
+			"y": -20,
+			"comment": ["Индикатор перегрева", "статора насоса 2"],
+			"scale": 1.5,
+			"color": "red",
+			"value": 0,
+			"title" : {
+				"text" : ["  Перегрев статора"],
+				"size": 20,
+				"color": "black",
+				"x": 0,
+				"y": -10
+			}
+		},	
+		{
+			"type": "rotary switch",
+			"name": "start1",
+			"x": -80,
+			"y": -20,
+			"comment": ["Переключатель режима работы насоса 1:", "авто, выключен, ручной"],
+			"scale": 0.8,
+			"positions": [1, 0, 2],
+			"value": 2,
+			"texture": "custom//panelRotator.png",
+			"title" : 
+			{
+				"text" : ["НАСОС 1 "],
+				"size": 40,
+				"color": "black",
+				"x": 20,
+				"y": 60
+			}				
+		},
+		
+		{
+			"type": "rotary switch",
+			"name": "start2",
+			"x": 30,
+			"y": -20,
+			"comment": ["Переключатель режима работы насоса 2:", "авто, выключен, ручной"],
+			"scale": 0.8,
+			"positions": [1, 0, 2],
+			"value": 2,
+			"texture": "custom//panelRotator.png",
+			"title" : 
+			{
+				"text" : ["НАСОС 2 "],
+				"size": 40,
+				"color": "black",
+				"x": 20,
+				"y": 60
+			}				
+		},
+		
+		
+		
+		{
+			"type": "horizontal arrow indicator",
+			"name": "ampers1",
+			"x": -80,
+			"y": 20,
+			"comment": ["Индикатор силы тока, подаваемого на насос 1"],
+			"scale": 0.9,
+			"texture": 0,
+			"cycled": 0,
+			"value": 0,
+			"min value": 0,
+			"max value": 200,
+			"title" : 
+			{
+				"text" : ["Сила тока"],
+				"size": 20,
+				"color": "black",
+				"x": 0,
+				"y": -20
+			}	
+		},
+		
+		{
+			"type": "horizontal arrow indicator",
+			"name": "ampers2",
+			"x": 30,
+			"y": 20,
+			"comment": ["Индикатор силы тока, подаваемого на насос 2"],
+			"scale": 0.9,
+			"texture": 0,
+			"cycled": 0,
+			"value": 0,
+			"min value": 0,
+			"max value": 200,
+			"title" : 
+			{
+				"text" : ["Сила тока"],
+				"size": 20,
+				"color": "black",
+				"x": 0,
+				"y": -20
+			}	
+		},
+		
+		{
+			"type": "holding button",
+			"name": "startIn",
+			"x": 0,
+			"y": -80,
+			"comment": ["Кнопка включения питания в системе"],
+			"scale": 1.5,
+			"value": 1,
+			"color": "red",
+			"title" : 
+			{
+				"text" : ["Питание"],
+				"size": 20,
+				"color": "black",
+				"x": 0,
+				"y": -15
+			}
+		},
+		
+		{
+			"type": "5 digits",
+			"name": "hours1",
+			"x": -50,
+			"y": 20,
+			"comment": ["Наработка насоса 1 в часах"],
+			"scale": 0.7,
+			"digits after dot": 0,
+			"value" : 0,
+			"color" : "white",
+			"title" : 
+			{
+				"text" : ["Наработка"],
+				"size": 20,
+				"color": "black",
+				"x": 5,
+				"y": -10
+			}
+		},
+		
+		{
+			"type": "5 digits",
+			"name": "hours2",
+			"x": 60,
+			"y": 20,
+			"comment": ["Наработка насоса 2 в часах"],
+			"scale": 0.7,
+			"digits after dot": 0,
+			"value" : 0,
+			"color" : "white",
+			"title" : 
+			{
+				"text" : ["Наработка"],
+				"size": 20,
+				"color": "black",
+				"x": 5,
+				"y": -10
+			}
+		},
+		
+		{
+			"type": "digit",
+			"name": "minutes1_1",
+			"x": -32,
+			"y": 20,
+			"comment": ["Наработка насоса 1 в часах (минуты)"],
+			"scale": 0.40,
+			"value" : 0,
+			"color" : "#6495ED",
+			"title" : 0
+		},
+		
+		{
+			"type": "digit",
+			"name": "minutes1_2",
+			"x": -26.5,
+			"y": 20,
+			"comment": ["Наработка насоса 1 в часах (минуты)"],
+			"scale": 0.40,
+			"value" : 0,
+			"color" : "#6495ED",
+			"title" : 0
+		},
+		
+		{
+			"type": "digit",
+			"name": "minutes2_1",
+			"x": 78,
+			"y": 20,
+			"comment": ["Наработка насоса 2 в часах (минуты)"],
+			"scale": 0.4,
+			"value" : 0,
+			"color" : "#6495ED",
+			"title" : 0
+		},
+		
+		{
+			"type": "digit",
+			"name": "minutes2_2",
+			"x": 83.5,
+			"y": 20,
+			"comment": ["Наработка насоса 2 в часах (минуты)"],
+			"scale": 0.4,
+			"value" : 0,
+			"color" : "#6495ED",
+			"title" : 0
+		}
+		
+		]
+	}
+	]
+}
